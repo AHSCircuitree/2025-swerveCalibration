@@ -25,7 +25,7 @@ public class RobotContainer {
 
  
 
-  /* Setting up bindings for necessary control of the swerve drive platform */
+  
   private final CommandXboxController Player1 = new CommandXboxController(0);
 
   //subsystem
@@ -33,7 +33,7 @@ public class RobotContainer {
 
   public SwerveRequest.FieldCentric driveFieldCentric = new SwerveRequest.FieldCentric()
       .withDeadband(MaxSpeed * 0.03).withRotationalDeadband(MaxAngularRate * 0.05) 
-      .withDriveRequestType(DriveRequestType.OpenLoopVoltage); // I want field-centric
+      .withDriveRequestType(DriveRequestType.OpenLoopVoltage); 
   public SwerveRequest.RobotCentric driveRobotCentric = new SwerveRequest.RobotCentric()
       .withDeadband(MaxSpeed * 0.03).withRotationalDeadband(MaxAngularRate * 0.05)
       .withDriveRequestType(DriveRequestType.OpenLoopVoltage);
